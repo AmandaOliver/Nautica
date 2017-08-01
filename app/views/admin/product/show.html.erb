@@ -1,0 +1,23 @@
+<table class='brand-show'>
+   <tr>
+       <td rowspan='5'>
+  <%= image_tag @product.product_img(:medium) %>
+    </td>
+</tr>
+<tr>
+    <td><b>Nombre: </b> <%= @product.name %></td>
+</tr>
+<tr>
+  <td><b>Marca:</b> <%= @product.brand.name %></td>
+</tr>
+<tr>
+  <td><b>Precio:</b> <%= sprintf("%0.2f €", @product.price) %></td>
+</tr>
+<tr>
+  <td><b>Descripción:</b>  <%= RedCloth.new(@product.description).to_html.html_safe if @product.description %>
+</td>
+</tr>
+</table></br>
+
+<%= link_to 'Editar', :action => 'edit', :id => @product %> |
+<%= link_to 'Atras', :action => 'index' %>

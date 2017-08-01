@@ -1,0 +1,9 @@
+<strong>Estás seguro de que quieres vaciar el carrito de compras?</strong>
+<br><br>
+<div style="float: left; width: auto;">
+<%= button_to 'Cancelar', { :controller => 'catalog', :action => 'index' }, :method => :get %>
+</div>
+<div style="float: left; width: auto;">
+<%= button_to 'Vaciar', :action => 'clear', :id => params[:id] %>
+</div>
+<br>

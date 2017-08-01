@@ -1,0 +1,8 @@
+<tr>
+  <td><%= link_to product.name, :action => 'show', :id => product %></td>
+  <td><%= link_to 'Editar', :action => 'edit', :id => product %></td>
+  <td>
+    <%= button_to 'Eliminar', { :action => 'destroy', :id => product },
+        data: { confirm: "¿Estás seguro de que quieres eliminar el producto: #{product.name}?" } %>   
+  </td>
+</tr>

@@ -1,0 +1,8 @@
+<%= form_tag "create", :multipart => true do %>   
+<%= render :partial => 'form' %>  
+<input type="reset" value="Limpiar" > 
+<input data-disable-with="Comprobando..." type="submit" value="Añadir producto" />
+<% end %>
+<%= link_to 'Atras', :action => 'index' %>
+
+

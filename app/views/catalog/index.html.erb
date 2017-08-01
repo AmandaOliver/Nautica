@@ -1,0 +1,5 @@
+<p><%= link_to 'Buscar', :action => 'search' %></p>
+<%= render :partial => 'products' %>
+<%= will_paginate @products, :page_links => false, :link_separator => ' | ', :previous_label => 'Anterior', :next_label => 'Siguiente' %>
+<p><%= link_to 'Últimos Productos', :action => 'latest' %>&nbsp;
+<%=link_to image_tag('feed-icon-14x14.png'),  :action => 'rss' %></p>

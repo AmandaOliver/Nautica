@@ -1,0 +1,47 @@
+product_ancla:
+  id: 1
+  brand_id: 1
+  name: Ancla
+  price: 12.1
+  description: 'Best anchor in the world'
+  product_img_file_name: 'sweet_anchor.jpg'
+
+product_ancla_chica:
+  id: 2
+  brand_id: 1
+  name: Ancla Chica
+  price: 125.1
+  description: 'Best anchor in the world'
+  product_img_file_name: 'sweet_anchor1.jpg'
+
+product_ancla_mediana:
+  id: 3
+  brand_id: 1
+  name: Ancla Mediana
+  price: 135.1
+  description: 'Best anchor in the world'
+  product_img_file_name: 'sweet_anchor2.jpg'
+
+product_ancla_grande:
+  id: 4
+  brand_id: 1
+  name: Ancla Grande
+  price: 1355.1
+  description: 'Best anchor in the world'
+  product_img_file_name: 'sweet_anchor3.jpg'
+
+product_ancla_enorme:
+  id: 5
+  brand_id: 1
+  name: Ancla Enorme
+  price: 1625.1
+  description: 'Best anchor in the world'
+  product_img_file_name: 'sweet_anchor4.jpg'
+
+product_ancla_hyper:
+  id: 6
+  brand_id: 1
+  name: Ancla hyper
+  price: 2355.1
+  description: 'Best anchor in the world'
+  product_img_file_name: 'sweet_anchor5.jpg'    

@@ -1,0 +1,7 @@
+<p>Por favor introduce tu correo electronico
+  y haz click en "Recuperar Contraseña".</p>
+
+<%= form_tag :action => 'create' do %>
+  <%= text_field_tag :email %>
+  <%= submit_tag "Recuperar Contraseña" %>
+<% end %>

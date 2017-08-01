@@ -1,0 +1,52 @@
+Script started on Mon 13 Apr 2015 07:12:59 PM CEST
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;charles@ubuntu: /media/psf/Home/ine_nauticos/p_nauticos]1;..os/p_nauticos[0m[27m[24m[J[[01;37mcharles[00m@[01;31mubuntu[00m [36mp_nauticos[00m ([01;32mmaster[32m [33m✗[00m)[00m]$ [K[?1h=rrake db:migrate[?1l>
+]2;rake db:migrate]1;db:migrate[1m[7m%[27m[1m[0m                                                                                                                                            ]2;charles@ubuntu: /media/psf/Home/ine_nauticos/p_nauticos]1;..os/p_nauticos[0m[27m[24m[J[[01;37mcharles[00m@[01;31mubuntu[00m [36mp_nauticos[00m ([01;32mmaster[32m [33m✗[00m)[00m]$ [K[?1h=rake db:migrate[15Dscript gene[4C migration products[34Dbundle exec                       [23D[11Drails generate migration products[?1l>
+]2;rails generate migration products]1;rails/home/charles/.rvm/gems/ruby-2.1.2@global/gems/bundler-1.6.2/lib/bundler/runtime.rb:34:in `block in setup': You have already activated spring 1.3.4, but your Gemfile requires spring 1.3.3. Prepending `bundle exec` to your command may solve this. (Gem::LoadError)
+	from /home/charles/.rvm/gems/ruby-2.1.2@global/gems/bundler-1.6.2/lib/bundler/runtime.rb:19:in `setup'
+	from /home/charles/.rvm/gems/ruby-2.1.2@global/gems/bundler-1.6.2/lib/bundler.rb:120:in `setup'
+	from /home/charles/.rvm/gems/ruby-2.1.2@global/gems/bundler-1.6.2/lib/bundler/setup.rb:7:in `<top (required)>'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/charles/.rvm/gems/ruby-2.1.2/gems/spring-1.3.4/lib/spring/commands.rb:33:in `<module:Spring>'
+	from /home/charles/.rvm/gems/ruby-2.1.2/gems/spring-1.3.4/lib/spring/commands.rb:4:in `<top (required)>'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/charles/.rvm/gems/ruby-2.1.2/gems/spring-1.3.4/lib/spring/server.rb:9:in `<top (required)>'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:135:in `require'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:135:in `rescue in require'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:144:in `require'
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;charles@ubuntu: /media/psf/Home/ine_nauticos/p_nauticos]1;..os/p_nauticos[0m[27m[24m[J[[01;37mcharles[00m@[01;31mubuntu[00m [36mp_nauticos[00m ([01;32mmaster[32m [33m✗[00m)[00m]$ [K[?1h=rruby --version[?1l>
+]2;ruby --version]1;rubyruby 2.1.2p95 (2014-05-08 revision 45877) [x86_64-linux]
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;charles@ubuntu: /media/psf/Home/ine_nauticos/p_nauticos]1;..os/p_nauticos[0m[27m[24m[J[[01;37mcharles[00m@[01;31mubuntu[00m [36mp_nauticos[00m ([01;32mmaster[32m [33m✗[00m)[00m]$ [K[?1h=rrais ls --version[?1l>
+]2;rails --version]1;railsRails 4.1.1
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;charles@ubuntu: /media/psf/Home/ine_nauticos/p_nauticos]1;..os/p_nauticos[0m[27m[24m[J[[01;37mcharles[00m@[01;31mubuntu[00m [36mp_nauticos[00m ([01;32mmaster[32m [33m✗[00m)[00m]$ [K[?1h=//bin/bash --login[?1l>
+]2;/bin/bash --login]1;/bin/bash]0;charles@ubuntu:/media/psf/Home/ine_nauticos/p_nauticos]7;file://ubuntu/media/psf/Home/ine_nauticos/p_nauticoscharles@ubuntu:/media/psf/Home/ine_nauticos/p_nauticos$ rvm 2.1.2
+]0;charles@ubuntu:/media/psf/Home/ine_nauticos/p_nauticos]7;file://ubuntu/media/psf/Home/ine_nauticos/p_nauticoscharles@ubuntu:/media/psf/Home/ine_nauticos/p_nauticos$ r[Krails [K[K[K[K[K[Krvm 2.1.2ails --version[K[1Pvm use 2.1.2[5Plistuse 2.1.2[4@rvm [C[C[C[C[C[C[C[C[Cinstall ruby-2.1.22.1.2[Kcd[K[K[Krails generate migration po[Kroducts
+/home/charles/.rvm/gems/ruby-2.1.2@global/gems/bundler-1.6.2/lib/bundler/runtime.rb:34:in `block in setup': You have already activated spring 1.3.4, but your Gemfile requires spring 1.3.3. Prepending `bundle exec` to your command may solve this. (Gem::LoadError)
+	from /home/charles/.rvm/gems/ruby-2.1.2@global/gems/bundler-1.6.2/lib/bundler/runtime.rb:19:in `setup'
+	from /home/charles/.rvm/gems/ruby-2.1.2@global/gems/bundler-1.6.2/lib/bundler.rb:120:in `setup'
+	from /home/charles/.rvm/gems/ruby-2.1.2@global/gems/bundler-1.6.2/lib/bundler/setup.rb:7:in `<top (required)>'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/charles/.rvm/gems/ruby-2.1.2/gems/spring-1.3.4/lib/spring/commands.rb:33:in `<module:Spring>'
+	from /home/charles/.rvm/gems/ruby-2.1.2/gems/spring-1.3.4/lib/spring/commands.rb:4:in `<top (required)>'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/charles/.rvm/gems/ruby-2.1.2/gems/spring-1.3.4/lib/spring/server.rb:9:in `<top (required)>'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:135:in `require'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:135:in `rescue in require'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:144:in `require'
+]0;charles@ubuntu:/media/psf/Home/ine_nauticos/p_nauticos]7;file://ubuntu/media/psf/Home/ine_nauticos/p_nauticoscharles@ubuntu:/media/psf/Home/ine_nauticos/p_nauticos$ bundle exc[Kec rails generate migration procut[K[K[Kducts
+/home/charles/.rvm/gems/ruby-2.1.2@global/gems/bundler-1.6.2/lib/bundler/runtime.rb:34:in `block in setup': You have already activated spring 1.3.4, but your Gemfile requires spring 1.3.3. Prepending `bundle exec` to your command may solve this. (Gem::LoadError)
+	from /home/charles/.rvm/gems/ruby-2.1.2@global/gems/bundler-1.6.2/lib/bundler/runtime.rb:19:in `setup'
+	from /home/charles/.rvm/gems/ruby-2.1.2@global/gems/bundler-1.6.2/lib/bundler.rb:120:in `setup'
+	from /home/charles/.rvm/gems/ruby-2.1.2@global/gems/bundler-1.6.2/lib/bundler/setup.rb:7:in `<top (required)>'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/charles/.rvm/gems/ruby-2.1.2/gems/spring-1.3.4/lib/spring/commands.rb:33:in `<module:Spring>'
+	from /home/charles/.rvm/gems/ruby-2.1.2/gems/spring-1.3.4/lib/spring/commands.rb:4:in `<top (required)>'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/charles/.rvm/gems/ruby-2.1.2/gems/spring-1.3.4/lib/spring/server.rb:9:in `<top (required)>'
+	from /home/charles/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:135:in `require'
+	from /home/charles/.rvm

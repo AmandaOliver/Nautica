@@ -1,0 +1,12 @@
+
+<%= form_tag "update?id=#{@brand.id}", :multipart => true  do %>
+  <%= render :partial => 'form' %>
+<input type="reset" value="Limpiar" > 
+  &nbsp;
+  <input data-disable-with="Actualizando..." type="submit" value="Actualizar" />
+<% end %>
+
+
+
+<p><%= link_to 'Ver detalles', :action => 'show', :id => @brand %> |
+<%= link_to 'Atras', :action => 'index' %></p>

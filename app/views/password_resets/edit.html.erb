@@ -1,0 +1,29 @@
+<% if @user.errors.any? %>
+<div id="errorExplanation">
+  <h2>Revisa que los siguientes campos sean válidos (<%=pluralize(@user.errors.count, "error") %>):</h2>
+  <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+
+    <li> <%= msg %> </li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<p>
+  Por favor introduce tu nueva contraseña
+  y presiona el botón "Actualizar Contraseña"
+</p>
+
+<%= form_tag :action => 'update' do %>
+<div class="field">
+  <p><label for="user_password">Contraseña</label><br/>
+    <%= password_field_tag :password %>
+  </div>
+
+  <div class="field">
+    <p><label for="user_password_confirmation">Confirmar contraseña</label><br/>
+      <%= password_field_tag :password_confirmation %>
+    </div>
+    <%= submit_tag "Actualizar Contraseña" %>
+    <% end %>

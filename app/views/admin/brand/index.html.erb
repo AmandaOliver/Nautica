@@ -1,0 +1,11 @@
+<table class='template-all'>
+  <tr>
+    <th>Nombre</th>
+    <th>Editar</th>
+    <th>Eliminar</th>
+  </tr>
+
+  <%= render :partial => 'brand', :collection => @brand %>
+</table>
+
+<p><%= link_to 'Añadir nueva marca', :action => 'new' %></p>

@@ -1,0 +1,18 @@
+<table class='brand-show'>
+   <% if !@brand.logo_url.blank? %>
+   <tr>
+    <td rowspan='3'>
+        <%= image_tag @brand.logo_url(:medium) %>
+    </td>
+</tr>
+<% end %>
+<tr>
+    <td><b>Nombre: </b> <%= @brand.name %></td>
+</tr>
+<tr>
+  <td><b>CIF: </b> <%= @brand.cif %></td>
+</tr>
+
+</table>
+<%= link_to 'Editar', :action => 'edit', :id => @brand %> |
+<%= link_to 'Atras', :action => 'index' %>

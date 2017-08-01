@@ -1,0 +1,32 @@
+(<FONT COLOR=red>*</FONT>) Campos obligatorios.
+<% if @brand.errors.any? %>
+<div id="errorExplanation">
+  <h2>Revisa que los siguientes campos sean válidos (<%=pluralize(@brand.errors.count, "error") %>):</h2>
+  <ul>
+    <% @brand.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<table class='form-template'>
+  <tr>
+    <td>
+      <label for="brand_name"><span>*</span>Nombre</label></td>
+    <td><%= text_field 'brand', 'name' %></td>
+  </tr>
+  <tr>
+   <td><label for="brand_cif"><span>*</span>CIF </label></td>
+   <td><%= text_field 'brand', 'cif' %></td>
+ </tr>
+ <tr>
+  <% if @brand.logo_url.exists? then %>
+    <%= image_tag @brand.logo_url.url (:medium) %>
+  <% else %>
+    <p> No existe imagen asociada. Por favor añada una. </p>
+  <% end %>
+   <td><label for="brand_logo_url">Logo (url)</label></td>
+   <td><%= file_field 'brand', :logo_url %></td>
+ </tr>
+</table>

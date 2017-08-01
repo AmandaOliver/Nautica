@@ -1,0 +1,15 @@
+<dl id = 'products'>
+  <% for product in @products %>
+    <dt>
+      <%= link_to product.name, :action => 'show', :id => product %>
+       <%= link_to '+', :controller => 'cart',
+       :action => 'add',
+       :id => product,
+       :remote => true  %>
+    </dt>
+
+<!--       <dd><%= product.brand.name %></dd>
+ -->  <dd><%= sprintf("%0.2f €", product.price) %></dd>
+    <dd><small>Marca: <%= product.brand.name %></small></dd>
+  <% end %>
+</dl>

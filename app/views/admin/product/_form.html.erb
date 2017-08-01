@@ -1,0 +1,40 @@
+(<FONT COLOR=red>*</FONT>) Campos obligatorios.
+<% if @product.errors.any? %>
+<div id="errorExplanation">
+  <h2>Revisa que los siguientes campos sean válidos (<%=pluralize(@product.errors.count, "error") %>):</h2>
+  <ul>
+    <% @product.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<table class='form-template'>
+  <tr>
+    <td><label for="product_brand"><span>*</span>Marca</label></td>
+    <td><%= collection_select :product, :brand_id, @brands, :id, :name %></td>
+  </tr>
+  <tr>
+    <td>
+      <label for="product_name"><span>*</span>Nombre</label></td>
+      <td><%= text_field 'product', 'name' %></td>
+    </tr>
+    <tr>
+     <td><label for="product_price"><span>*</span>Precio </label></td>
+     <td><%= text_field 'product', 'price' %></td>
+   </tr>
+   <tr>
+     <td><label for="product_description">Descripción </label></td>
+     <td><%= text_area 'product', 'description' %></td>
+   </tr>
+  <tr>
+  <% if @product.product_img.exists? then %>
+    <%= image_tag @product.product_img.url (:medium) %>
+  <% else %>
+    <p> No existe imagen asociada. Por favor añada una. </p>
+  <% end %>
+     <td><label for="product_product_img">Imagen </label></td>
+     <td><%= file_field 'product', :product_img %></td>
+ </tr>
+ </table>

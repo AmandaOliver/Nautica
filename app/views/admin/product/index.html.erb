@@ -1,0 +1,11 @@
+<table class='template-all'>
+  <tr>
+    <th>Nombre</th>
+    <th>Editar</th>
+    <th>Eliminar</th>
+  </tr>
+
+  <%= render :partial => 'product', :collection => @product %>
+</table>
+
+<p><%= link_to 'Añadir nuevo producto', :action => 'new' %></p>
